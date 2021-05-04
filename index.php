@@ -1,13 +1,18 @@
 <?php
-    // Single Line comment: Hello World! 
-    echo 'Hello World'; 
-?>
 
-<?='Hello World'?>
+$a = 9 > 5;
+$b = 10 != 10;
+$c = $a && $b;
+$d = $a || $b;
+$e = $b && $c; 
+$f = $a || $d;
 
-<?php
-/* We prefer to use echo. 
-    print is a little slower.
-*/
-    print 'Hello World'; 
-?>
+$logic = array( $a, $b, $c, $d, $e, $f );
+
+echo '<pre>';
+var_dump( $logic ); 
+echo '</pre>';
+
+$c = $a and $b;
+
+var_dump( $c );
