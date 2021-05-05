@@ -1,0 +1,23 @@
+{
+    "name": "nnjeim/beth.onboarding",
+    "authors": [
+        {
+            "name": "Najm Njeim",
+            "email": "nnjeim@crowdfavorite.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        },
+        "files": [
+            "app/Helpers/funcs.php"
+        ]
+    }
+}
