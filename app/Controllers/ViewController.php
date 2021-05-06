@@ -5,6 +5,7 @@ namespace App\Controllers;
 require __DIR__ . '/../../vendor/autoload.php';
 
 use App\Controllers\BaseController;
+use App\Services\Facades\Log;
 use App\Actions\Sum\SumAction;
 
 class ViewController extends BaseController
@@ -31,8 +32,9 @@ class ViewController extends BaseController
 	 */
 	public function mySum()
 	{
-		$sum = (new SumAction($this->num1, $this->num2))();
-
+		$sum = invoke(SumAction::class, $this->num1, $this->num2);
+		/*-- log --*/
+		Log::debug("The sum is $sum");
 		return $this->toJson(['sum' => $sum]);
 	}
 }
