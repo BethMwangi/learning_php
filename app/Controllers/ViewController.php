@@ -34,7 +34,7 @@ class ViewController extends BaseController
 	{
 		$sum = invoke(SumAction::class, $this->num1, $this->num2);
 		/*-- log --*/
-		Log::debug("The sum is $sum");
+		Log::info("The sum is $sum");
 		return $this->toJson(['sum' => $sum]);
 	}
 }

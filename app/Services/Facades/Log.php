@@ -4,10 +4,7 @@ namespace App\Services\Facades;
 
 use App\Services\Logger\Logger;
 
-class Log
+class Log extends BaseFacade
 {
-	public static function __callStatic($method, $args)
-	{
-		return (new Logger())->$method(...$args);
-	}
+	public static string $className = Logger::class;
 }
