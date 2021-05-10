@@ -5,7 +5,7 @@
  */
 namespace App\Controllers;
 
-class BaseController
+abstract class BaseController
 {
 	/**
 	 * @param  array  $data
