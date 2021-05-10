@@ -42,6 +42,46 @@ public static function test()
   - ` __toString() ` method describes string representation of an object 
   - `__invoke() ` method is defined in a class that will be called while trying to call an object in a way of calling function
 
+  #### magic methods __set(), __get(), __isset()
+  __set() is called when writing data to inaccessible private , protected or non-existence property
+  __get() is called when reading from inaccessible private , protected or non-existence property
+  __isset() is used by calling the __isset() method on inaccessible private , protected or non-existence properties
+
 ### Facades - Design Patterns
 - A Facade is one the PHP design patterns used to simplify the structure from complex class system.
 - Facade classes extend the base class. 
+
+### Callbacks
+- A callback is a function which is passed as an argument into another function
+- To use a function as a callback funtion, pass a string containing name of the function as a n argument of another function
+- Example you can pass a callback to array_map() function to calculate a length of a string in an array
+
+ ```php
+   function myCallback($item) {
+        return strlen($item);
+   }
+$str = ["Nairobi", "Cairo", "Helsinki"];
+$lens = array_map("myCallback", $str);
+echo ($len);
+   ```
+
+
+### PHP Traits
+- Traits define a way to resue code and they reduce code duplication
+- A trait reduces the limitation of single inheritace hence anabling one to reuse it freely in different classes from different folders
+- Traits are defined as classes only that they declare with the keyword trait 
+ ```php
+   trait Hello
+   {
+       public function sayHello() {
+       echo 'Hello';
+   }
+}
+    class myClass {
+        use hello;
+        public function func() {
+            echo "there";
+        }
+        
+    }
+   ```
