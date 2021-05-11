@@ -85,3 +85,27 @@ echo ($len);
         
     }
    ```
+
+### PHP Factory pattern
+- Factory design patterns are used when dealing with multiple resources and want to implement high level abstraction.
+- The main part of the code handles the business logic to address only the management of objects rather than their making. 
+- Example, A car buying agency should simply track orders and not have to also deal with the details of how the cars are made.
+
+### PHP Reflection class
+- Reflection classes  make it possible to examine the properties of other classes by retrieving metadata  and reports information about classes. 
+- It can also reveal all the methods and data members of a class and all the modifiers applied to them.
+- Example of the API has a number of different clases and one interce as shown below;
+
+
+```php
+    class Reflection
+    interface Reflector
+    class ReflectionException extends Exception;
+```
+  #### methods 
+  - some of the methods include 
+    ```php
+    public getMethod ( string $name ) : ReflectionMethod
+    public hasMethod ( string $name ) : bool
+    public hasProperty ( string $name ) : bool
+    ```
