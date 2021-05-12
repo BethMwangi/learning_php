@@ -8,6 +8,7 @@ use App\Controllers\BaseController;
 use App\Services\Facades\Log;
 use App\Actions\Sum\SumAction;
 use App\Actions\Sum\ReduceAction;
+use Psr\Log\LogLevel;
 use stdClass;
 
 class ViewController extends BaseController
@@ -21,7 +22,8 @@ class ViewController extends BaseController
 	{
 		$sum = invoke(SumAction::class, $num1, $num2);
 		/*-- log --*/
-		Log::info("The sum is $sum");
+		$message = "The sum is $sum";
+		Log::info($message);
 		return $this->toJson(['sum' => $sum]);
 	}
 
@@ -31,4 +33,4 @@ class ViewController extends BaseController
 	}
 }
 
-dd((new ViewController())->arraySum(1, 1.23, 'a', ['something in it']));
+(new ViewController())->mySum(1, 1.23);
