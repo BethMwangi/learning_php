@@ -8,7 +8,6 @@ use App\Controllers\BaseController;
 use App\Services\Facades\Log;
 use App\Actions\Sum\SumAction;
 use App\Actions\Sum\ReduceAction;
-use Psr\Log\LogLevel;
 use stdClass;
 
 class ViewController extends BaseController
