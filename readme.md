@@ -94,7 +94,10 @@ echo ($len);
 ### PHP Reflection class
 - Reflection classes  make it possible to examine the properties of other classes by retrieving metadata  and reports information about classes. 
 - It can also reveal all the methods and data members of a class and all the modifiers applied to them.
+- Reflection is also useful for debugging code
+- Example functions include the `get_class()` and `get_class_methods()`
 - Example of the API has a number of different clases and one interce as shown below;
+
 
 
 ```php
@@ -109,3 +112,21 @@ echo ($len);
     public hasMethod ( string $name ) : bool
     public hasProperty ( string $name ) : bool
     ```
+
+## Builder
+Introduction
+- In a scenario where a person needs a complete car, the user does not need to know the internal components used to build it. A car has moving parts like wheels, the body and one only needs a complete car to use it. In this case, that is how a  director gives the rules to the builder.  A constructor is needed to help assemble these components.
+- A director , construct the object that is used by the Builder interface.
+- You need an interface to do the build which has the knowledge on how to build. It will assemble the various components of the product.
+- The builder class defines the procedures of the build, ie. set colours
+
+#### Difference between the Interfaces and Abstract classes
+
+- The interface uses the keyword interface to define it
+- The Interfaces cannot have properties whereas abstract classes can have properties/attributes.
+- Use an abstract class when you want to force developers working in your system (yourself included) to implement a set numbers of methods and you want to provide some base methods that will help them develop their child classes.
+- Use an interface when you want to force developers working in your system (yourself included) to implement a set number of methods on the classes they'll be building.
+- Interfaces class supports multiple Inheritance
+- Abstract classes do not support multiple inheritances
+
+
