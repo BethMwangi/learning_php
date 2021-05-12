@@ -2,29 +2,43 @@
 
 namespace App\Services\Logger;
 
+use Monolog\Logger as MonologLogger;
+use Monolog\Handler\StreamHandler;
+use Monolog\Formatter\LineFormatter;
+use Psr\Log\LoggerTrait;
+
 class Logger
 {
-	public function info(string $message)
-	{
-		$this->log(strtoupper(__METHOD__), $message);
-	}
-
-	public function warning(string $message)
-	{
-		$this->log(strtoupper(__METHOD__), $message);
-	}
-
-	public function debug(string $message)
-	{
-		$this->log(strtoupper(__METHOD__), $message);
-	}
+	use LoggerTrait;
 
 	/**
-	 * @param  string  $type
-	 * @param  string  $message
+	 * Logs with an arbitrary level.
+	 *
+	 * @param mixed   $level
+	 * @param string  $message
+	 * @param mixed[] $context
+	 *
+	 * @return void
+	 *
+	 * @throws \Psr\Log\InvalidArgumentException
 	 */
-	private function log(string $type, string $message)
+	public function log($level, $message, array $context = array())
 	{
-		echo $type . ' | ' . $message;
+		$log = new MonologLogger('stream');
+		/*-- stream handler --*/
+		/*-- console logger --*/
+		$consoleHandler = new StreamHandler('php://stdout', MonologLogger::DEBUG, true);
+		/*-- file logger --*/
+		$dateFormat = "Y n j, g:i a";
+		$output = "%datetime% > %level_name% > %message% %context% %extra%\n";
+
+		$lineFormatter = new LineFormatter($output, $dateFormat);
+		$fileHandler = new StreamHandler(__DIR__ . '/../../../storage/Log/app.log', MonologLogger::DEBUG, true);
+		$fileHandler->setFormatter($lineFormatter);
+		/*-- register handlers --*/
+		$log->pushHandler($consoleHandler);
+		$log->pushHandler($fileHandler);
+
+		$log->{$level}($message, $context);
 	}
 }

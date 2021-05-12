@@ -11,6 +11,14 @@ class ComposerStaticInit992c6eea8a3ce206be8540c6fd3ac19b
     );
 
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -18,6 +26,14 @@ class ComposerStaticInit992c6eea8a3ce206be8540c6fd3ac19b
     );
 
     public static $prefixDirsPsr4 = array (
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
@@ -25,22 +41,6 @@ class ComposerStaticInit992c6eea8a3ce206be8540c6fd3ac19b
     );
 
     public static $classMap = array (
-        'App\\Actions\\BaseAction' => __DIR__ . '/../..' . '/app/Actions/BaseAction.php',
-        'App\\Actions\\Sum\\ReduceAction' => __DIR__ . '/../..' . '/app/Actions/Sum/ReduceAction.php',
-        'App\\Actions\\Sum\\SumAction' => __DIR__ . '/../..' . '/app/Actions/Sum/SumAction.php',
-        'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
-        'App\\Controllers\\PaymentController' => __DIR__ . '/../..' . '/app/Controllers/PaymentController.php',
-        'App\\Controllers\\ViewController' => __DIR__ . '/../..' . '/app/Controllers/ViewController.php',
-        'App\\Models\\Video' => __DIR__ . '/../..' . '/app/Models/Video.php',
-        'App\\Services\\Facades\\BaseFacade' => __DIR__ . '/../..' . '/app/Services/Facades/BaseFacade.php',
-        'App\\Services\\Facades\\Log' => __DIR__ . '/../..' . '/app/Services/Facades/Log.php',
-        'App\\Services\\Facades\\Video' => __DIR__ . '/../..' . '/app/Services/Facades/Video.php',
-        'App\\Services\\Logger\\Logger' => __DIR__ . '/../..' . '/app/Services/Logger/Logger.php',
-        'App\\Services\\Payment\\PaymentFactory' => __DIR__ . '/../..' . '/app/Services/Payment/PaymentFactory.php',
-        'App\\Services\\Payment\\PaymentMethods\\CachPayment' => __DIR__ . '/../..' . '/app/Services/Payment/PaymentMethods/CachPayment.php',
-        'App\\Services\\Payment\\PaymentMethods\\PaymentInterface' => __DIR__ . '/../..' . '/app/Services/Payment/PaymentMethods/PaymentInterface.php',
-        'App\\Services\\Payment\\PaymentMethods\\StripePayment' => __DIR__ . '/../..' . '/app/Services/Payment/PaymentMethods/StripePayment.php',
-        'App\\Services\\Respond\\Respond' => __DIR__ . '/../..' . '/app/Services/Respond/Respond.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

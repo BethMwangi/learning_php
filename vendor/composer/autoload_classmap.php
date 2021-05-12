@@ -6,21 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Actions\\BaseAction' => $baseDir . '/app/Actions/BaseAction.php',
-    'App\\Actions\\Sum\\ReduceAction' => $baseDir . '/app/Actions/Sum/ReduceAction.php',
-    'App\\Actions\\Sum\\SumAction' => $baseDir . '/app/Actions/Sum/SumAction.php',
-    'App\\Controllers\\BaseController' => $baseDir . '/app/Controllers/BaseController.php',
-    'App\\Controllers\\PaymentController' => $baseDir . '/app/Controllers/PaymentController.php',
-    'App\\Controllers\\ViewController' => $baseDir . '/app/Controllers/ViewController.php',
-    'App\\Models\\Video' => $baseDir . '/app/Models/Video.php',
-    'App\\Services\\Facades\\BaseFacade' => $baseDir . '/app/Services/Facades/BaseFacade.php',
-    'App\\Services\\Facades\\Log' => $baseDir . '/app/Services/Facades/Log.php',
-    'App\\Services\\Facades\\Video' => $baseDir . '/app/Services/Facades/Video.php',
-    'App\\Services\\Logger\\Logger' => $baseDir . '/app/Services/Logger/Logger.php',
-    'App\\Services\\Payment\\PaymentFactory' => $baseDir . '/app/Services/Payment/PaymentFactory.php',
-    'App\\Services\\Payment\\PaymentMethods\\CachPayment' => $baseDir . '/app/Services/Payment/PaymentMethods/CachPayment.php',
-    'App\\Services\\Payment\\PaymentMethods\\PaymentInterface' => $baseDir . '/app/Services/Payment/PaymentMethods/PaymentInterface.php',
-    'App\\Services\\Payment\\PaymentMethods\\StripePayment' => $baseDir . '/app/Services/Payment/PaymentMethods/StripePayment.php',
-    'App\\Services\\Respond\\Respond' => $baseDir . '/app/Services/Respond/Respond.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );
