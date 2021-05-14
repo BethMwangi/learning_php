@@ -22,7 +22,9 @@ class ViewController extends BaseController
 		$sum = invoke(SumAction::class, $num1, $num2);
 		/*-- log --*/
 		$message = "The sum is $sum";
-		Log::info($message);
+		Log::debug('i am the master of facades!');
+		Log::channel('file')->info($message);
+
 		return $this->toJson(['sum' => $sum]);
 	}
 
