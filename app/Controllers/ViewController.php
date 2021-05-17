@@ -2,12 +2,12 @@
 
 namespace App\Controllers;
 
-require __DIR__ . '/../../vendor/autoload.php';
-
+use App\Actions\Users\StoreAction;
 use App\Controllers\BaseController;
 use App\Services\Facades\Log;
 use App\Actions\Sum\SumAction;
 use App\Actions\Sum\ReduceAction;
+use App\Actions\Users\ShowAction;
 use stdClass;
 
 class ViewController extends BaseController
@@ -32,6 +32,18 @@ class ViewController extends BaseController
 	{
 		return invoke(ReduceAction::class, func_get_args());
 	}
-}
 
-(new ViewController())->mySum(1, 1.23);
+	public function getUsers()
+	{
+		$users = invoke(ShowAction::class);
+
+		return json_encode($users);
+	}
+
+	public function createUser(string $first_name, string $last_name)
+	{
+		$user = invoke(StoreAction::class, compact('first_name', 'last_name'));
+
+		return json_encode($user);
+	}
+}
