@@ -14,10 +14,18 @@ class ComposerStaticInit992c6eea8a3ce206be8540c6fd3ac19b
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'PackageVersions\\' => 16,
         ),
         'M' => 
         array (
             'Monolog\\' => 8,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Deprecations\\' => 22,
+            'Doctrine\\DBAL\\' => 14,
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\' => 16,
         ),
         'A' => 
         array (
@@ -30,9 +38,29 @@ class ComposerStaticInit992c6eea8a3ce206be8540c6fd3ac19b
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'PackageVersions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Doctrine\\Deprecations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+        ),
+        'Doctrine\\DBAL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/dbal/src',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
         ),
         'App\\' => 
         array (

@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-require __DIR__ . '/../../vendor/autoload.php';
-
 use App\Controllers\BaseController;
 use App\Services\Payment\PaymentFactory;
 
@@ -24,5 +22,3 @@ class PaymentController extends BaseController
 		return invoke(PaymentFactory::class, $this->paymentMethod)->pay();
 	}
 }
-
-(new PaymentController('stripe'))->pay();

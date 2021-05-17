@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-require __DIR__ . '/../../vendor/autoload.php';
-
 use App\Actions\Phones\StorePhoneAction;
 
 class DirectorController
@@ -38,10 +36,3 @@ class DirectorController
 		$this->phones[] = invoke(StorePhoneAction::class, compact('make', 'model', 'color', 'capacity'));
 	}
 }
-
-$director = new DirectorController();
-
-dd($director->storePhones([
-	['make' => 'Apple', 'model' => 'iPhone11', 'color' => 'black', 'capacity' => '64gb'],
-	['make' => null, 'model' => 'iPhone12', 'color' => 'red', 'capacity' => '128gb']
-]));
