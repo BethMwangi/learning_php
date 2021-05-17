@@ -21,3 +21,22 @@ if (! function_exists('invoke')) {
 		return (new $className(...$args))();
 	}
 }
+
+if (! function_exists('config')) {
+	function config(string $configFile)
+	{
+		$filePath = __DIR__ . '/../../config/' . $configFile .'.php';
+
+		if (! file_exists($filePath)) {
+			return [];
+		}
+
+		$config = require $filePath;
+
+		if (is_array($config)) {
+			return $config;
+		}
+
+		return [];
+	}
+}
