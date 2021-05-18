@@ -130,3 +130,49 @@ Introduction
 - Abstract classes do not support multiple inheritances
 
 
+## PHP Loggers
+What is Logging?
+- It onvolves recording information about your application's runtime behaviour to a more persistent medium.
+- Application logginf is important since it gives you the visisbility of events in your application. 
+- log entries involves important information such as the
+    -Timestamp: States the exact time on when the log event entry happened 
+    - Event contest: A more descriptive event enttry contest
+    - Log severity level: These are the various ways of logging, In psr-3 logging, there are 8 methods available which include, debug, info, noice, warning, error, critical, alert and emergency. 
+
+### Monolog
+- Monolog is one of the most popular PHP logging libraries 
+- When creating a logger, a channel name is defined to distingush the various loggers.
+- some of the channels used to log may include, sms, email, database, slack channel and many more
+- The handlers in monolog are used to save the messages to log files or send to various channels depending on the configuration. In this case, the `StreamHandler` is used to log the message to the `app_log.log` file.
+```
+<?php
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+// create a log channel
+$log = new Logger('channel-name');
+$log->pushHandler(new StreamHandler('app_log.log', Logger::WARNING));
+
+// adding records to the log
+$log->warning('Foo');
+$log->error('Bar');
+```
+- We can handle multiple handlers to a stack. The below snippet has a file and console handler. 
+```
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
+
+$main = new Logger('main');
+$main->pushHandler(new StreamHandler(__DIR__ . '/logs/app.log'));
+
+$main->pushHandler(new StreamHandler('php://stdout', $level = Logger::DEBUG,
+        $bubble = true));
+
+$main->info('message');
+
+```
