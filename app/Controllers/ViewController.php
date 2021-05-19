@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Core\Container\Container;
 use App\Actions\Users\StoreAction;
 use App\Controllers\BaseController;
 use App\Services\Facades\Log;
@@ -13,13 +14,37 @@ use stdClass;
 class ViewController extends BaseController
 {
 	/**
+	 * @var ShowAction
+	 */
+	private ShowAction $showAction;
+	/**
+	 * @var SumAction
+	 */
+	private SumAction $sumAction;
+	/**
+	 * @var StoreAction
+	 */
+	private StoreAction $storeAction;
+
+	public function __construct(
+		ShowAction $showAction,
+		SumAction $sumAction,
+		StoreAction $storeAction
+	)
+	{
+		$this->showAction = $showAction;
+		$this->sumAction = $sumAction;
+		$this->storeAction = $storeAction;
+	}
+
+	/**
 	 * @param  int  $num1
 	 * @param  int  $num2
 	 * @return false|string
 	 */
 	public function mySum(int $num1, int $num2)
 	{
-		$sum = invoke(SumAction::class, $num1, $num2);
+		$sum = $this->sumAction->handle($num1, $num2);
 		/*-- log --*/
 		$message = "The sum is $sum";
 		Log::debug('i am the master of facades!');
@@ -35,14 +60,16 @@ class ViewController extends BaseController
 
 	public function getUsers()
 	{
-		$users = invoke(ShowAction::class);
+		$users = $this->showAction->handle();
+
+		Log::channel('file')->info('users', ['users' => $users]);
 
 		return json_encode($users);
 	}
 
 	public function createUser(string $first_name, string $last_name)
 	{
-		$user = invoke(StoreAction::class, compact('first_name', 'last_name'));
+		$user = $this->storeAction->handle($first_name, $last_name);
 
 		return json_encode($user);
 	}
