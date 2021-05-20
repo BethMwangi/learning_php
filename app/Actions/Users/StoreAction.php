@@ -6,22 +6,15 @@ use App\Services\Facades\DB;
 
 class StoreAction
 {
-	private array $args;
-
-	public function __construct(array $args)
-	{
-		$this->args = $args;
-	}
-
-	public function __invoke()
+	public function handle($first_name, $last_name)
 	{
 		return DB::insert('users')
 			->values([
 				'first_name' => '?',
 				'last_name' => '?',
 			])
-			->setParameter(0, $this->args['first_name'])
-			->setParameter(1, $this->args['last_name'])
+			->setParameter(0, $first_name)
+			->setParameter(1, $last_name)
 			->execute();
 	}
 }

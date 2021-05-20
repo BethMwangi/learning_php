@@ -1,5 +1,14 @@
 <?php
 
+use App\Core\Container\Container;
+
+if (!function_exists('env')) {
+	function env(string $env, ?string $default = null)
+	{
+		return $_ENV[$env] ?? $default;
+	}
+}
+
 if (! function_exists('dd')) {
 	/**
 	 * var_dump args
@@ -25,7 +34,7 @@ if (! function_exists('invoke')) {
 if (! function_exists('config')) {
 	function config(string $configFile)
 	{
-		$filePath = __DIR__ . '/../../config/' . $configFile .'.php';
+		$filePath = app('path.config') .'/' . $configFile .'.php';
 
 		if (! file_exists($filePath)) {
 			return [];
@@ -38,5 +47,23 @@ if (! function_exists('config')) {
 		}
 
 		return [];
+	}
+}
+
+if (!function_exists('app')) {
+	/**
+	 * @param  string|null  $entry
+	 *
+	 * @return mixed
+	 */
+	function app(?string $entry = null)
+	{
+		$app = Container::getInstance();
+
+		if ($entry === null) {
+			return $app;
+		}
+
+		return $app->get($entry);
 	}
 }

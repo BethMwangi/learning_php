@@ -2,7 +2,8 @@
 
 namespace App\Services\Facades;
 
-use App\Services\Database\QueryBuilder;
+use App\Core\Facades\BaseFacade;
+use App\Core\Database\QueryBuilder;
 
 class DB extends BaseFacade
 {

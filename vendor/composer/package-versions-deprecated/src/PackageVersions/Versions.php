@@ -38,9 +38,17 @@ final class Versions
   'doctrine/dbal' => '3.1.0@5ba62e7e40df119424866064faf2cef66cb5232a',
   'doctrine/deprecations' => 'v0.5.3@9504165960a1f83cc1480e2be1dd0a0478561314',
   'doctrine/event-manager' => '1.1.1@41370af6a30faa9dc0368c4a6814d596e81aba7f',
+  'graham-campbell/result-type' => 'v1.0.1@7e279d2cd5d7fbb156ce46daada972355cea27bb',
+  'league/container' => '3.3.5@048ab87810f508dbedbcb7ae941b606eb8ee353b',
   'monolog/monolog' => '2.2.0@1cb1cde8e8dd0f70cc0fe51354a59acad9302084',
+  'phpoption/phpoption' => '1.7.5@994ecccd8f3283ecf5ac33254543eb0ac946d525',
+  'psr/container' => '1.1.1@8622567409010282b7aeebe4bb841fe98b58dcaf',
   'psr/log' => '1.1.4@d49695b909c3b7628b6289db5479a1c204601f11',
-  'nnjeim/beth.onboarding' => 'dev-main@f9390d22c8adc015c87381f846aa2f680827a47a',
+  'symfony/polyfill-ctype' => 'v1.22.1@c6c942b1ac76c82448322025e084cadc56048b4e',
+  'symfony/polyfill-mbstring' => 'v1.22.1@5232de97ee3b75b0360528dae24e73db49566ab1',
+  'symfony/polyfill-php80' => 'v1.22.1@dc3063ba22c2a1fd2f45ed856374d79114998f91',
+  'vlucas/phpdotenv' => 'v5.3.0@b3eac5c7ac896e52deab4a99068e3f4ab12d9e56',
+  'nnjeim/beth.onboarding' => 'dev-main@846efcd0809a9b62dff393b5b03e5b8b4c877a64',
 );
 
     private function __construct()

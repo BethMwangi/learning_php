@@ -1,9 +1,9 @@
 <?php
 
 return [
-	'dbname' => 'beth.local',
-	'user' => 'nnjeim',
-	'password' => '00CF;629>FDAa^1a',
-	'host' => 'localhost',
+	'dbname' => env('DBNAME'),
+	'user' => env('DBUSER'),
+	'password' => env('DBPASS'),
+	'host' => env('DBHOST'),
 	'driver' => 'pdo_mysql',
 ];
