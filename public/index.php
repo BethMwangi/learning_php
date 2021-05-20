@@ -1,7 +1,7 @@
 <?php
 
 require __DIR__ . '/../vendor/autoload.php';
-
+use App\Core\Http\Fetch;
 $basePath = dirname(__DIR__);
 /**
  * .env file.
@@ -13,8 +13,13 @@ $dotenv->safeLoad();
  */
 new App\Core\Container\Container($basePath);
 
-//Router
-//Testing
-echo app(App\Controllers\ViewController::class)->getUsers();
+//Guzzle client
+//$http = Fetch::get('https://api.bmbc.cloud/api/countries');
+
+$http = app('fetch')->get('https://api.bmbc.cloud/api/countries');
+
+app('log')->channel('file')->info('the service providers are great');
+
+echo json_encode($http);
 
 

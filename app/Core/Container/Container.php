@@ -40,6 +40,8 @@ class Container
 		if ($basePath !== null) {
 			$this->setPaths($basePath);
 		}
+
+		$this->registerServiceProviders();
 	}
 
 	/**
@@ -62,6 +64,9 @@ class Container
 		return static::$instance;
 	}
 
+	/**
+	 * @param  string  $basePath
+	 */
 	protected function setPaths(string $basePath)
 	{
 		$basePath = rtrim($basePath, '\/');
@@ -70,5 +75,14 @@ class Container
 		static::$instance->add('path.config', $basePath . DIRECTORY_SEPARATOR . $this->configPath);
 		static::$instance->add('path.storage', $basePath . DIRECTORY_SEPARATOR . $this->storagePath);
 		static::$instance->add('path.providers', $basePath . DIRECTORY_SEPARATOR . $this->providersPath);
+	}
+
+	protected function registerServiceProviders()
+	{
+		$serviceProviders = require __DIR__ . '/../Config/providers.php';
+
+		foreach ($serviceProviders as $serviceProvider) {
+			static::$instance->addServiceProvider($serviceProvider);
+		}
 	}
 }
