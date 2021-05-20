@@ -30,3 +30,8 @@
 2021-05-19 04:37:24 > INFO > users {"users":[{"id":"1","first_name":"Beth","last_name":"Mwangi"},{"id":"2","first_name":"Najm","last_name":"Njeim"},{"id":"3","first_name":"John","last_name":"Doe"},{"id":"4","first_name":"Jennifer","last_name":"Doe"}]} []
 2021-05-19 04:37:53 > INFO > users {"users":[{"id":"1","first_name":"Beth","last_name":"Mwangi"},{"id":"2","first_name":"Najm","last_name":"Njeim"},{"id":"3","first_name":"John","last_name":"Doe"},{"id":"4","first_name":"Jennifer","last_name":"Doe"}]} []
 2021-05-19 04:39:23 > INFO > users {"users":[{"id":"1","first_name":"Beth","last_name":"Mwangi"},{"id":"2","first_name":"Najm","last_name":"Njeim"},{"id":"3","first_name":"John","last_name":"Doe"},{"id":"4","first_name":"Jennifer","last_name":"Doe"}]} []
+2021-05-19 05:40:00 > INFO > users {"users":[{"id":"1","first_name":"Beth","last_name":"Mwangi"},{"id":"2","first_name":"Najm","last_name":"Njeim"},{"id":"3","first_name":"John","last_name":"Doe"},{"id":"4","first_name":"Jennifer","last_name":"Doe"}]} []
+2021-05-20 04:26:13 > INFO > the service providers are great [] []
+2021-05-20 04:34:12 > INFO > the service providers are great [] []
+2021-05-20 04:35:40 > INFO > the service providers are great [] []
+2021-05-20 04:36:25 > INFO > the service providers are great [] []

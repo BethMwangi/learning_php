@@ -13,6 +13,6 @@ class BaseFacade
 
 	public static function __callStatic(string $method, array $args)
 	{
-		return (new static::$className())->$method(...$args);
+		return app(static::$className)->$method(...$args);
 	}
 }
