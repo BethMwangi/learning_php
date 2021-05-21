@@ -64,7 +64,7 @@ class ViewController extends BaseController
 
 		Log::channel('file')->info('users', ['users' => $users]);
 
-		return json_encode($users);
+		return response(json_encode($users));
 	}
 
 	public function createUser(string $first_name, string $last_name)

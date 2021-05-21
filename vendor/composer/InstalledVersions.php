@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd7feefc5be36bbe641e542b2cdb48cb6aff06f43',
+    'reference' => '67fc82b14d130927b018b82be273f4c0c660b521',
     'name' => 'nnjeim/beth.onboarding',
   ),
   'versions' => 
@@ -45,12 +45,12 @@ private static $installed = array (
     ),
     'doctrine/cache' => 
     array (
-      'pretty_version' => '1.11.0',
-      'version' => '1.11.0.0',
+      'pretty_version' => '1.11.2',
+      'version' => '1.11.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'a9c1b59eba5a08ca2770a76eddb88922f504e8e0',
+      'reference' => '9c53086695937c50c47936ed86d96150ffbcf60d',
     ),
     'doctrine/dbal' => 
     array (
@@ -115,6 +115,33 @@ private static $installed = array (
       ),
       'reference' => 'dc960a912984efb74d0a90222870c72c87f10c91',
     ),
+    'laminas/laminas-diactoros' => 
+    array (
+      'pretty_version' => '2.6.0',
+      'version' => '2.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7d2034110ae18afe05050b796a3ee4b3fe177876',
+    ),
+    'laminas/laminas-httphandlerrunner' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6a2dd33e4166469ade07ad1283b45924383b224b',
+    ),
+    'laminas/laminas-zendframework-bridge' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6cccbddfcfc742eb02158d6137ca5687d92cee32',
+    ),
     'league/container' => 
     array (
       'pretty_version' => '3.3.5',
@@ -123,6 +150,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '048ab87810f508dbedbcb7ae941b606eb8ee353b',
+    ),
+    'league/route' => 
+    array (
+      'pretty_version' => '5.0.1',
+      'version' => '5.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7c85d2cae29d3a6a96f46e327b4c660044200ed9',
     ),
     'monolog/monolog' => 
     array (
@@ -133,6 +169,15 @@ private static $installed = array (
       ),
       'reference' => '1cb1cde8e8dd0f70cc0fe51354a59acad9302084',
     ),
+    'nikic/fast-route' => 
+    array (
+      'pretty_version' => 'v1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '181d480e08d9476e61381e04a71b34dc0432e812',
+    ),
     'nnjeim/beth.onboarding' => 
     array (
       'pretty_version' => 'dev-main',
@@ -140,7 +185,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd7feefc5be36bbe641e542b2cdb48cb6aff06f43',
+      'reference' => '67fc82b14d130927b018b82be273f4c0c660b521',
     ),
     'ocramius/package-versions' => 
     array (
@@ -149,11 +194,34 @@ private static $installed = array (
         0 => '1.11.99',
       ),
     ),
+    'opis/closure' => 
+    array (
+      'pretty_version' => '3.6.2',
+      'version' => '3.6.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '06e2ebd25f2869e54a306dda991f7db58066f7f6',
+    ),
     'orno/di' => 
     array (
       'replaced' => 
       array (
         0 => '~2.0',
+      ),
+    ),
+    'orno/http' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '~1.0',
+      ),
+    ),
+    'orno/route' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '~1.0',
       ),
     ),
     'phpoption/phpoption' => 
@@ -197,6 +265,22 @@ private static $installed = array (
         0 => '1.0',
       ),
     ),
+    'psr/http-factory' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '12ac7fcd07e5b077433f5f2bee95b3a771bf61be',
+    ),
+    'psr/http-factory-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
     'psr/http-message' => 
     array (
       'pretty_version' => '1.0.1',
@@ -213,6 +297,24 @@ private static $installed = array (
         0 => '1.0',
       ),
     ),
+    'psr/http-server-handler' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'aff2f80e33b7f026ec96bb42f63242dc50ffcae7',
+    ),
+    'psr/http-server-middleware' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2296f45510945530b9dceb8bcedb5cb84d40c5f5',
+    ),
     'psr/log' => 
     array (
       'pretty_version' => '1.1.4',
@@ -228,6 +330,15 @@ private static $installed = array (
       array (
         0 => '1.0.0',
       ),
+    ),
+    'psr/simple-cache' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
     ),
     'ralouphie/getallheaders' => 
     array (
@@ -273,6 +384,20 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b3eac5c7ac896e52deab4a99068e3f4ab12d9e56',
+    ),
+    'zendframework/zend-diactoros' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '^2.2.1',
+      ),
+    ),
+    'zendframework/zend-httphandlerrunner' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '^1.1.0',
+      ),
     ),
   ),
 );
