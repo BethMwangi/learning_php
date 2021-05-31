@@ -12,6 +12,7 @@ Version: 0.0.1
 Author URI: http://ma.tt/
 */
 
-include __DIR__ . '/Controllers/PluginController.php';
+require 'vendor/autoload.php';
+require 'core/bootstrap.php';
 
-PluginController::getInstance();
+app(Beth\Controllers\PluginController::class);
