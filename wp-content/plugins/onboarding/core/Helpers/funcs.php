@@ -34,7 +34,7 @@ if (! function_exists('invoke')) {
 if (! function_exists('config')) {
 	function config(string $configFile)
 	{
-		$filePath = app('path.config') .'/' . $configFile .'.php';
+		$filePath = app('path.config') . '/' . $configFile .'.php';
 
 		if (! file_exists($filePath)) {
 			return [];
