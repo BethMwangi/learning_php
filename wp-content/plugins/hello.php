@@ -96,5 +96,25 @@ function dolly_css() {
 	</style>
 	";
 }
+function hello_beth() {
+    if (is_admin()){
+        echo "Hello Beth";
+    }
+    else {
+        echo "Hello World";
+    }
+}
+
+add_action('login_header', 'hello_beth');
+add_action('admin_notices', 'hello_beth');
+
+function change_headerurl( $url ) {
+    $url = 'https://google.com';
+    return $url;
+}
+
+add_action('login_header', 'hello_dolly');
+
+add_filter('login_headerurl', 'change_headerurl');
 
 add_action( 'admin_head', 'dolly_css' );
