@@ -27,7 +27,18 @@ if (! function_exists('invoke')) {
 
 		$className = array_shift($args);
 
-		return (new $className(...$args))();
+		return (new $className(...$args))(); //__construct; __invoke
+	}
+}
+
+if (! function_exists('trigger')) {
+	function trigger()
+	{
+		$args = func_get_args();
+
+		$className = array_shift($args);
+
+		return (new $className())->execute(...$args); //No constructor; execute method should exist //optionally it can take arguments
 	}
 }
 
