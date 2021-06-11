@@ -1,0 +1,94 @@
+2021-06-10T03:59:55+00:00 CRITICAL Uncaught Error: Call to undefined method Beth\Database\Migrations\ProductsMetaMigration::tableExists() in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php:26
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(41): Beth\Database\Migrations\ProductsMetaMigration->execute()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Controllers/PluginController.php(36): trigger('Beth\\Database\\M...')
+#2 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Controllers\PluginController->activationAction(false)
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /usr/local/var/www/html/wordpress.beth/wp-admin/includes/plugin.php(701): do_action('activate_onboar...', false)
+#6 /usr/local/var in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php on line 26
+
+2021-06-10T03:59:57+00:00 CRITICAL Uncaught Error: Call to undefined method Beth\Database\Migrations\ProductsMetaMigration::tableExists() in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php:26
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(41): Beth\Database\Migrations\ProductsMetaMigration->execute()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Controllers/PluginController.php(36): trigger('Beth\\Database\\M...')
+#2 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Controllers\PluginController->activationAction('')
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /usr/local/var/www/html/wordpress.beth/wp-admin/plugins.php(193): do_action('activate_onboar...')
+#6 {main}
+  thrown in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php on line 26
+
+2021-06-10T03:59:57+00:00 CRITICAL Uncaught Error: Call to undefined method Beth\Database\Migrations\ProductsMetaMigration::tableExists() in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php:26
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(41): Beth\Database\Migrations\ProductsMetaMigration->execute()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Controllers/PluginController.php(36): trigger('Beth\\Database\\M...')
+#2 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Controllers\PluginController->activationAction('')
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /usr/local/var/www/html/wordpress.beth/wp-admin/plugins.php(193): do_action('activate_onboar...')
+#6 {main}
+  thrown in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php on line 26
+
+2021-06-10T04:00:58+00:00 CRITICAL Uncaught Error: Call to undefined method Beth\Database\Migrations\ProductsMetaMigration::getPrefixedTableName() in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php:32
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php(26): Beth\Database\Migrations\ProductsMetaMigration->tableExists()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(41): Beth\Database\Migrations\ProductsMetaMigration->execute()
+#2 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Controllers/PluginController.php(36): trigger('Beth\\Database\\M...')
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Controllers\PluginController->activationAction(false)
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /usr/local/var/www/html/wordp in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php on line 32
+
+2021-06-10T04:01:00+00:00 CRITICAL Uncaught Error: Call to undefined method Beth\Database\Migrations\ProductsMetaMigration::getPrefixedTableName() in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php:32
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php(26): Beth\Database\Migrations\ProductsMetaMigration->tableExists()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(41): Beth\Database\Migrations\ProductsMetaMigration->execute()
+#2 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Controllers/PluginController.php(36): trigger('Beth\\Database\\M...')
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Controllers\PluginController->activationAction('')
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /usr/local/var/www/html/wordpres in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php on line 32
+
+2021-06-10T04:01:00+00:00 CRITICAL Uncaught Error: Call to undefined method Beth\Database\Migrations\ProductsMetaMigration::getPrefixedTableName() in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php:32
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php(26): Beth\Database\Migrations\ProductsMetaMigration->tableExists()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(41): Beth\Database\Migrations\ProductsMetaMigration->execute()
+#2 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Controllers/PluginController.php(36): trigger('Beth\\Database\\M...')
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Controllers\PluginController->activationAction('')
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#5 /usr/local/var/www/html/wordpres in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Migrations/ProductsMetaMigration.php on line 32
+
+2021-06-10T04:18:25+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Actions/Woocommerce/Product/PrintProductMetaAction.php:9
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Actions\Woocommerce\Product\PrintProductMetaAction::execute(Object(WP_Post))
+#1 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#2 /usr/local/var/www/html/wordpress.beth/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#3 /usr/local/var/www/html/wordpress.beth/wp-admin/edit-form-advanced.php(649): do_action('edit_form_after...', Object(WP_Post))
+#4 /usr/local/var/www/html/wordpress.beth/wp-admin/post.php(206): require('/usr/local/var/...')
+#5 {main}
+  thrown in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Actions/Woocommerce/Product/PrintProductMetaAction.php on line 9
+
+2021-06-10T04:26:08+00:00 CRITICAL Uncaught TypeError: Argument 1 passed to Beth\Database\Queries\Woocommerce\Product\GetProductMetaQuery::__construct() must be an instance of WP_Post, string given, called in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php on line 30 and defined in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Queries/Woocommerce/Product/GetProductMetaQuery.php:12
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(30): Beth\Database\Queries\Woocommerce\Product\GetProductMetaQuery->__construct('14')
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Actions/Woocommerce/Product/PrintProductMetaAction.php(11): invoke('Beth\\Database\\Q...', '14')
+#2 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Actions\Woocommerce\Product\PrintProductMetaAction::execute(Object(WP_Post))
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook. in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Queries/Woocommerce/Product/GetProductMetaQuery.php on line 12
+
+2021-06-10T04:27:16+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Queries/Woocommerce/Product/GetProductMetaQuery.php:24
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(30): Beth\Database\Queries\Woocommerce\Product\GetProductMetaQuery->__invoke()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Actions/Woocommerce/Product/PrintProductMetaAction.php(11): invoke('Beth\\Database\\Q...', Object(WP_Post))
+#2 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Actions\Woocommerce\Product\PrintProductMetaAction::execute(Object(WP_Post))
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /usr/local/var/www/html/wordpress.beth/wp-admin/edit-form-advanced.p in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Queries/Woocommerce/Product/GetProductMetaQuery.php on line 24
+
+2021-06-10T04:28:59+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Queries/Woocommerce/Product/GetProductMetaQuery.php:24
+Stack trace:
+#0 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/core/Helpers/funcs.php(30): Beth\Database\Queries\Woocommerce\Product\GetProductMetaQuery->__invoke()
+#1 /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Actions/Woocommerce/Product/PrintProductMetaAction.php(11): invoke('Beth\\Database\\Q...', Object(WP_Post))
+#2 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(292): Beth\Actions\Woocommerce\Product\PrintProductMetaAction::execute(Object(WP_Post))
+#3 /usr/local/var/www/html/wordpress.beth/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /usr/local/var/www/html/wordpress.beth/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#5 /usr/local/var/www/html/wordpress.beth/wp-admin/edit-form-advanced.p in /usr/local/var/www/html/wordpress.beth/wp-content/plugins/onboarding/src/Database/Queries/Woocommerce/Product/GetProductMetaQuery.php on line 24
+
