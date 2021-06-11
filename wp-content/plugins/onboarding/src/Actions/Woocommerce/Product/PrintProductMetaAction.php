@@ -3,6 +3,7 @@
 namespace Beth\Actions\Woocommerce\Product;
 
 use Beth\Database\Queries\Woocommerce\Product\GetProductMetaQuery;
+use Beth\Views\Woocommerce\Product\ProductMetaView;
 
 class PrintProductMetaAction
 {
@@ -10,6 +11,6 @@ class PrintProductMetaAction
 	{
 		$meta = invoke(GetProductMetaQuery::class, $post);
 
-		var_dump($meta);
+		invoke(ProductMetaView::class, json_decode($meta, true));
 	}
 }
